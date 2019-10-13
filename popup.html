@@ -5,42 +5,99 @@
   <meta charset="UTF-8">
   <title> EssaySaver </title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <style>
-
 html, body{
-
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  margin:0;
-  min-height: 800px;
-  padding: 0px;
+  font-family: "Impact";
+  font-size: 20px;
+  margin: 4px;
+  padding: 10px 10px 10px 10px;
+  min-height: 400px;
   width: 300px;
-
+  background-color: #1d1c5c;
+  color: #fff;
 }
+body{
+  min-height: 300px;
+  width: 300px;
+}
+h1{
+  font-family: "Impact";
+  font-size: 30px;
+  margin: 0px;
+  color: #fff;
+  min-height: 100px;
+  width: 300px;
+  float: right;
+}
+
+dropdown-menu{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  position: relative;
+  min-width: 160px;
+}
+
+btn btn-danger dropdown-toggle{
+  position: absolute;
+  transition: .5s ease;
+  top: 400px;
+  left: 400px;
+}
+
+btn-format{
+  padding: 20px 20px 20px 20px;
+  width: 100px;
+  float: right;
+}
+
+
 </style>
-  <h1> EssaySaver </h1>
 
-</head>
-<body>
-
-<div class="btn-group">
-    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Action
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#" id= "New Goal">Set New Goal</a>
-      <a class="dropdown-item" href="#" id= "Goal">Start Goal</a>
-      <a class="dropdown-item" href="#" id= "Count" >Word Count Per Hour</a>
-    </div>
+<h1>
+  EssayHero
+  <div class="btn-format">
+  <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#" id= "Set new goal">Set New Goal</a>
+        <a class="dropdown-item" href="#" id= "Current progress">See Current Goal</a>
+        <!--<a class="dropdown-item" href="#" id= "Count" >Word Count Per Hour</a>-->
+      </div>
   </div>
+</div>
+</h1>
+</head>
 
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="user">
+     <p>User_Name <i class="glyphicon glyphicon-user"></i></p>
+     <br>
+ </div>
 
+  <div class="level">
+    <p>Level: </p>
+    <p>Your Total Points: </p>
+    <br>
+ </div>
+
+  <div>
+    <button type="button" class="btn btn-danger" id="start" >Start</button>
+    <button type="button" class="btn btn-danger" id="end">End</button>
+  </div>
 
   <script src="popup.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>

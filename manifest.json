@@ -13,7 +13,6 @@
       "all_frames": true,
       "match_about_blank": true,
     	"js": ["content.js"]
-      
 
     }],
 
@@ -22,11 +21,6 @@
     	"default_popup": "popup.html"
     },
 
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-
-    },
     "browser_action": {
 
       "default_popup": "popup.html",
